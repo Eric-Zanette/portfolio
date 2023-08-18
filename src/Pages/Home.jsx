@@ -9,6 +9,7 @@ const Home = () => {
   });
 
   useEffect(() => {
+    const download = document.getElementById("downloadImage");
     if (isHovered.projects) {
       const video = document.createElement("video");
       video.id = "background-video";
@@ -19,12 +20,21 @@ const Home = () => {
       video.src = "./img/coding.mp4";
       document.body.appendChild(video);
       document.body.style.color = "white";
+      download.classList.add("white");
     } else {
       const existingVideo = document.getElementById("background-video");
       if (existingVideo) {
         existingVideo.remove();
+        download.classList.remove("white");
         document.body.style.color = "black";
       }
+    }
+
+    const contactBox = document.getElementById("contactBox");
+    if (isHovered.contact) {
+      contactBox.classList.add("hovered");
+    } else {
+      contactBox.classList.remove("hovered");
     }
   }, [isHovered]);
 
@@ -63,12 +73,12 @@ const Home = () => {
           <h2 className="resume">Resume</h2>
           <a className="downloadImageContainer" href="" download>
             <img
-              className="downloadImage"
+              id="downloadImage"
               src="/img/downloading.png"
               alt="Download Resume"
             />
           </a>
-          <div className="contactBox">
+          <div id="contactBox">
             <p>EricZanette@gmail.com</p>
             <p>613-501-1203</p>
           </div>
