@@ -5,10 +5,6 @@ const Navbar = () => {
   return (
     <nav>
       <div className="navContainer">
-        <Link>
-          <h1>Eric Zanette</h1>
-        </Link>
-
         <ul className="navLinks">
           <Link to="/">
             <li>Home</li>
