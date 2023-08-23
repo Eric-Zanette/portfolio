@@ -453,6 +453,7 @@ nav .navLinks {
 }
 
 @media (max-width: 800px) {
+  /* Projects Page */
   .projectsPage {
     margin-top: 0;
   }
@@ -485,6 +486,74 @@ nav .navLinks {
 }
 
 @media (max-width: 500px) {
+  /* Navbar */
+  ul {
+    font-size: 10px;
+  }
+
+  nav .navContainer {
+    justify-content: center;
+  }
+
+  /* Home page */
+
+  .homePage {
+    margin-top: 5%;
+  }
+
+  .homePage .nameHeader {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .homePage .nameSubHeader {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .homePage .homeList {
+    margin: 45px auto 0 auto;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    font-size: 20px;
+  }
+
+  .flyInImage.visible {
+    right: 20%;
+    opacity: 0;
+    transition: opacity 0.3s ease, right 0.3s ease;
+  }
+
+  .homePage .bottomBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+    height: 370px;
+    bottom: -220%;
+  }
+
+  .homePage .bottomBox h2 {
+    font-size: 20px;
+  }
+
+  .homePage .bottomBox #downloadImage {
+    height: 20px;
+    transition: transform 0.5s ease;
+  }
+
+  .homePage .bottomBox #contactBox {
+    display: none;
+  }
+
+  .homePage .bottomBox #contactBox.hovered {
+    display: none;
+  }
+  /* Projects Page */
   .projectsPage .projectLine .projectContainer .projectContent {
     flex-direction: column;
     font-size: 10px;
