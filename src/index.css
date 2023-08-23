@@ -108,7 +108,7 @@ nav .navLinks {
   opacity: 0;
   position: absolute;
   right: 70%;
-  top: 43%;
+  top: 40%;
 
   width: 230px;
   pointer-events: none;
@@ -185,9 +185,13 @@ nav .navLinks {
 .projectsPage .projectLine {
   display: flex;
   position: relative;
-  height: 340px;
-  margin-bottom: -10px;
+  margin-bottom: 30px;
   align-items: center;
+  margin-bottom: -2%;
+}
+
+.projectsPage .projectLine.commster {
+  justify-content: flex-end;
 }
 
 .projectsPage .projectLine .projectLinks {
@@ -222,9 +226,9 @@ nav .navLinks {
 
 .projectsPage .projectLine .projectContainer {
   padding: 20px;
-  position: absolute;
+  position: relative;
   width: 70%;
-  height: 360px;
+  height: auto;
   padding: 20px;
   color: white;
   animation: slideInFromLeft 1s forwards;
@@ -264,7 +268,8 @@ nav .navLinks {
 }
 
 .projectsPage .projectContainer .projectContent .projectImage {
-  width: 320px;
+  position: relative;
+  width: 55%;
 }
 
 /* About me */
@@ -359,6 +364,24 @@ nav .navLinks {
   transform: translateY(-5px);
 }
 
+/* Loading Screen */
+
+.loadingContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.loadingContainer h1 {
+  font-size: 100px;
+  animation: fadeIn 2s ease-in-out;
+  margin-bottom: 200px;
+}
+
 /* Utilities */
 .container {
   width: 100%;
@@ -390,7 +413,7 @@ nav .navLinks {
     right: 100%;
   }
   to {
-    right: 0;
+    right: 0%;
   }
 }
 
@@ -419,5 +442,52 @@ nav .navLinks {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 800px) {
+  .projectsPage {
+    margin-top: 0;
+  }
+
+  .projectsPage .projectLine {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    height: auto;
+  }
+
+  .projectsPage .projectLine .projectLinks {
+    position: relative;
+    flex-direction: row;
+    right: 0;
+    left: 0;
+    font-size: 30px;
+    height: auto;
+  }
+
+  .projectsPage .projectLine .projectLinks.left {
+    left: 0;
+  }
+
+  .projectsPage .projectLine .projectContainer {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .projectsPage .projectLine .projectContainer .projectContent {
+    flex-direction: column;
+    font-size: 10px;
+  }
+
+  .projectsPage .projectLine .projectContainer .projectImage {
+    width: 100%;
+  }
+
+  .projectsPage .projectLine .projectLinks {
+    font-size: 20px;
   }
 }

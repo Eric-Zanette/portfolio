@@ -36,7 +36,7 @@ const Projects = () => {
             </a>
           </div>
         </div>
-        <div className="projectLine">
+        <div className="projectLine commster">
           <div className="projectContainer commster">
             <h2 className="projectHeader">Commster</h2>
             <div className="projectContent">
