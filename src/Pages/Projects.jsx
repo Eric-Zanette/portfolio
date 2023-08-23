@@ -28,7 +28,7 @@ const Projects = () => {
               <h3>GitHub</h3>
             </a>
             <a
-              href="http://35.183.69.138"
+              href="http://chesster.zannt.net"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -57,7 +57,11 @@ const Projects = () => {
             >
               <h3>GitHub</h3>
             </a>
-            <a href="/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="http://commster.zannt.net"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <h3>Live Site</h3>
             </a>
           </div>

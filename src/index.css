@@ -18,7 +18,7 @@ body {
 
 a:link {
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
 
 a:visited {
@@ -324,6 +324,41 @@ nav .navLinks {
   margin-bottom: 2px;
   height: 50px;
 }
+
+/* Contact Information */
+.contactPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contacts {
+  margin: 20% auto 0 auto;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contactPage .sites {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10% auto 0 auto;
+}
+
+.contactPage .contacts span {
+  color: rgb(215, 12, 12);
+}
+
+.contactPage .sites img {
+  height: 100px;
+}
+
+.contactPage .sites img:hover {
+  transform: translateY(-5px);
+}
+
 /* Utilities */
 .container {
   width: 100%;
