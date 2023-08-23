@@ -8,12 +8,8 @@
 }
 
 body {
-  position: absolute;
-  height: 100%;
-  width: 100%;
   background-size: cover;
   color: black;
-  overflow: hidden;
 }
 
 a:link {
@@ -108,7 +104,7 @@ nav .navLinks {
   opacity: 0;
   position: absolute;
   right: 70%;
-  top: 40%;
+  top: 47%;
 
   width: 230px;
   pointer-events: none;
@@ -123,11 +119,15 @@ nav .navLinks {
 }
 
 .homePage .bottomBox {
+  position: absolute;
   margin-top: 150px;
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
+  overflow: hidden;
+  height: 370px;
+  bottom: -120%;
 }
 
 .homePage .bottomBox h2 {
@@ -148,19 +148,20 @@ nav .navLinks {
 }
 
 .homePage .bottomBox #contactBox {
-  position: absolute;
+  position: relative;
   font-weight: 900;
   font-size: 30px;
   display: flex;
   justify-content: space-around;
   width: 100%;
-  bottom: -60%;
-  transition: 0.3s;
+  bottom: -250px;
+  transition: all 0.3s ease-in-out;
 }
 
 .homePage .bottomBox #contactBox.hovered {
-  bottom: -17%;
+  bottom: -80px;
   display: flex;
+  transition: all 0.3s ease-in-out;
 }
 
 #backgroundVideo {
@@ -252,6 +253,7 @@ nav .navLinks {
 
 .projectsPage .projectLine .projectContainer.tasker {
   background-color: rgb(32, 118, 193);
+  margin-bottom: 20px;
 }
 
 .projectsPage .projectContainer .projectHeader {
@@ -280,15 +282,19 @@ nav .navLinks {
   align-items: center;
 }
 
+.aboutPage h1 {
+  margin-top: 60px;
+}
+
 .aboutPage h2 {
-  margin-top: 120px;
+  margin-top: 60px;
 }
 
 .aboutPage .aboutPortrait {
   width: 300px;
   border-radius: 30px;
-  margin-bottom: 120px;
-  margin-top: 75px;
+  margin-bottom: 60px;
+  margin-top: 35px;
 }
 
 .aboutPage .aboutText {
@@ -332,13 +338,14 @@ nav .navLinks {
 
 /* Contact Information */
 .contactPage {
+  margin-top: 175px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .contacts {
-  margin: 20% auto 0 auto;
+  margin: 7% auto 0 auto;
   font-size: 20px;
   display: flex;
   flex-direction: column;
@@ -358,6 +365,7 @@ nav .navLinks {
 
 .contactPage .sites img {
   height: 100px;
+  transition: transform 0.5s ease;
 }
 
 .contactPage .sites img:hover {
@@ -386,7 +394,6 @@ nav .navLinks {
 .container {
   width: 100%;
   max-width: 1200px;
-  padding: 20px;
   margin: auto;
   position: relative;
 }

@@ -16,8 +16,15 @@ const Contact = () => {
           </h2>
         </div>
         <div className="sites">
-          <img src="/img/github.png" alt="" />
-          <img src="/img/linkedin.png" alt="" />
+          <a href="https://github.com/Eric-Zanette" target="_blank">
+            <img src="/img/github.png" alt="" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/eric-zanette-372bab241/"
+            target="_blank"
+          >
+            <img src="/img/linkedin.png" alt="" />
+          </a>
         </div>
       </div>
     </div>
