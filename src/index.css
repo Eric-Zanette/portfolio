@@ -503,7 +503,7 @@ nav .navLinks {
   }
 
   .homePage .nameHeader {
-    margin: 140px auto 0 auto;
+    margin: 70px auto 0 auto;
     text-align: center;
     font-size: 40px;
   }
@@ -535,7 +535,7 @@ nav .navLinks {
     align-items: center;
     overflow: hidden;
     height: 370px;
-    bottom: -170%;
+    bottom: -150%;
   }
 
   .homePage .bottomBox h2 {
