@@ -8,6 +8,21 @@ const useImagePreload = () => {
     "./img/chesster.png",
     "./img/eric.jpg",
     "./img/tasker.png",
+    "./img/linkedin.png",
+    "./img/github.png",
+    "./img/techs/aws.png",
+    "./img/techs/css.png",
+    "./img/techs/express.png",
+    "./img/techs/flask.png",
+    "./img/techs/git.png",
+    "./img/techs/html.png",
+    "./img/techs/js.png",
+    "./img/techs/linux.png",
+    "./img/techs/mongo.png",
+    "./img/techs/node.png",
+    "./img/techs/postgres.png",
+    "./img/techs/python.png",
+    "./img/techs/react.png",
   ];
 
   useEffect(() => {
@@ -25,7 +40,7 @@ const useImagePreload = () => {
         console.error(`failed to load image: ${url}`);
       };
     });
-  }, [imageUrls]);
+  }, []);
 
   return imagesLoaded;
 };
